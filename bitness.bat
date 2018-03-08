@@ -11,7 +11,7 @@ if [%1]==[] goto usage
 		echo x86
 		exit /B 1
 	) || (
-		echo Undetermined
+		echo Undetermined - most likely architecture agnostic
 		exit /B 2
 	)
 )
@@ -22,5 +22,5 @@ echo Usage: %0 ^<fileToCheck^>
 echo.
 echo        ErrorLevel 0 = x64
 echo        ErrorLevel 1 = x86
-echo        ErrorLevel 2 = Undetermined - probably not applicable
+echo        ErrorLevel 2 = Undetermined - most likely architecture agnostic
 exit /B 3
